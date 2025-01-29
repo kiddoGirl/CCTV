@@ -5872,7 +5872,8 @@ select:focus {
 .accordion .accordion-button.collapsed:after {
     background: #2a334e;
     border: none;
-    content: "+";
+    content: "+" !important;
+    display: inline-block;
     right: 20px;
     left: inherit;
     font-size: 18px;
@@ -5889,7 +5890,8 @@ select:focus {
 .accordion .accordion-button:after {
     background: #fff;
     border: none;
-    content: "-";
+    content: "-" !important;
+    display: inline-block;
     right: 20px;
     border-radius: 5px;
     left: inherit;
