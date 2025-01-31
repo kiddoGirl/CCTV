@@ -190,13 +190,13 @@
             loop: !0,
             responsiveClass: !0,
             nav: !0,
-            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
             dots: !1,
             margin: 0,
             autoplay: !0,
             thumbs: !0,
             thumbsPrerendered: !0,
             autoplayTimeout: 5e3,
+            items: 1,
             smartSpeed: 800,
             responsive: {
                 0: {
@@ -214,14 +214,14 @@
         }), $(".testimonial-carousel1").owlCarousel({
             loop: !0,
             responsiveClass: !0,
-            nav: !1,
-            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
+            nav: !0,
             dots: !1,
             margin: 20,
             autoplay: !0,
             thumbs: !0,
             thumbsPrerendered: !0,
             autoplayTimeout: 5e3,
+            items: 1,
             smartSpeed: 1500,
             responsive: {
                 0: {
@@ -239,28 +239,28 @@
         }), $(".testimonial-carousel2").owlCarousel({
             loop: !0,
             responsiveClass: !0,
-            nav: !1,
-            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
+            nav: !0,
             dots: !1,
             margin: 30,
             autoplay: !0,
             autoplayTimeout: 5e3,
+            items: 1,
             smartSpeed: 800,
             responsive: {
                 0: {
                     items: 1
                 },
                 992: {
-                    items: 2
+                    items: 1
                 },
                 1e3: {
-                    items: 2
+                    items: 1
                 }
             }
         }), $(".testimonial-carousel4").owlCarousel({
             loop: !0,
             responsiveClass: !0,
-            nav: !1,
+            nav: !0,
             dots: !1,
             margin: 40,
             autoplay: !0,
@@ -274,8 +274,9 @@
             responsiveClass: !0,
             autoplay: !0,
             autoplayTimeout: 5e3,
+            items: 1,
             smartSpeed: 1500,
-            nav: !1,
+            nav: !0,
             dots: !0,
             center: !1,
             margin: 10,
