@@ -129,16 +129,16 @@
                     items: 3
                 }
             }
-        }), $(".service-carousel1").owlCarousel({
-            center: !1,
+        }),$(".service-carousel1").owlCarousel({
+            center: false,
             items: 2,
-            loop: !0,
-            dots: !1,
-            nav: !0,
-            navText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"],
+            loop: true,
+            dots: false,
+            nav: true,
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
             margin: 28,
-            autoplay: !0,
-            autoplayTimeout: 5e3,
+            autoplay: true,
+            autoplayTimeout: 5000,
             smartSpeed: 1500,
             responsive: {
                 0: {
@@ -157,13 +157,14 @@
                     items: 5
                 }
             }
-        }), $(".service-slider").owlCarousel({
+        });
+         $(".service-slider").owlCarousel({
             center: !1,
             items: 2,
             loop: !0,
             dots: !1,
             nav: !0,
-            navText: ["<i class='ti-arrow-left text-primary'></i>", "<i class='ti-arrow-right text-primary'></i>"],
+            navText: ["<i class='fa-solid fa-arrow-left text-primary'></i>", "<i class='fa-solid fa-arrow-right text-primary'></i>"],
             margin: 30,
             autoplay: !0,
             autoplayTimeout: 5e3,
@@ -189,7 +190,7 @@
             loop: !0,
             responsiveClass: !0,
             nav: !0,
-            navText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"],
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
             dots: !1,
             margin: 0,
             autoplay: !0,
@@ -214,7 +215,7 @@
             loop: !0,
             responsiveClass: !0,
             nav: !1,
-            navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
             dots: !1,
             margin: 20,
             autoplay: !0,
@@ -239,7 +240,7 @@
             loop: !0,
             responsiveClass: !0,
             nav: !1,
-            navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
             dots: !1,
             margin: 30,
             autoplay: !0,
@@ -284,10 +285,10 @@
                     margin: 0
                 },
                 768: {
-                    items: 2
+                    items: 1
                 },
                 1400: {
-                    items: 3
+                    items: 1
                 }
             }
         }), $(".portfolio-carousel-one").owlCarousel({
@@ -346,7 +347,7 @@
             autoplayTimeout: 5e3,
             smartSpeed: 1500,
             nav: !0,
-            navText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"],
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
             dots: !1,
             margin: 30,
             responsive: {
@@ -475,7 +476,7 @@
             dots: !1,
             margin: 0,
             nav: !0,
-            navText: ["<i class='ti-arrow-left text-secondary'></i>", "<i class='ti-arrow-right text-secondary'></i>"],
+            navText: ["<i class='fa-solid fa-arrow-left text-secondary'></i>", "<i class='fa-solid fa-arrow-right text-secondary'></i>"],
             autoplay: !0,
             smartSpeed: 1500,
             mouseDrag: !1,
@@ -493,7 +494,7 @@
             dots: !0,
             margin: 0,
             nav: !1,
-            navText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"],
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
             autoplay: !0,
             autoplayTimeout: 6e3,
             smartSpeed: 1500,
@@ -511,7 +512,7 @@
             dots: !0,
             margin: 0,
             nav: !1,
-            navText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"],
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
             autoplay: !0,
             autoplayTimeout: 6e3,
             smartSpeed: 1500,

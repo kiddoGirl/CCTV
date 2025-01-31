@@ -6,6 +6,7 @@
     font-style: normal;
 }
 
+/* Themify Icons */
 [class^="ti-"],
 [class*=" ti-"] {
     font-family: 'themify';
@@ -15,10 +16,28 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    /* Better Font Rendering =========== */
+    /* Better Font Rendering */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+[class^="fa-"],
+[class*=" fa-"] {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    speak: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 
 .ti-wand:before {
     content: "\e600";

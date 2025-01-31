@@ -2437,7 +2437,7 @@ select:focus {
 }
 
 .slider-fade1.owl-theme .owl-nav .owl-prev:before {
-    content: '';
+    content: "\2190";
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -2595,7 +2595,8 @@ select:focus {
     background: rgba(255, 255, 255, 0.2) !important;
     opacity: 1;
     border-radius: 0.25rem;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
+    
 }
 
 .slider-fade2 .owl-nav .owl-prev {
@@ -2608,7 +2609,8 @@ select:focus {
     background: rgba(255, 255, 255, 0.2) !important;
     opacity: 1;
     border-radius: 0.25rem;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
+
 }
 
 .slider-fade2 .owl-nav .owl-next:hover {
@@ -2623,7 +2625,7 @@ select:focus {
     color: #1158e7;
     font-size: 24px;
     line-height: 55px;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
 }
 
 .slider-fade2 .owl-nav .owl-prev {
@@ -2631,7 +2633,7 @@ select:focus {
 }
 
 .slider-fade2 .owl-nav .owl-prev:hover {
-    background: #1158e7 !important
+    background: #1158e7 !important;
 }
 
 .slider-fade2 .owl-nav .owl-prev span {
@@ -4403,7 +4405,7 @@ select:focus {
 
 .card-style14 .card-body:hover:before {
     border-left: 1px solid #1158e7;
-    border-bottom: 1px solid #1158e7
+    border-bottom: 1px solid #1158e7;
 }
 
 .card-style14:hover .card-body span {
