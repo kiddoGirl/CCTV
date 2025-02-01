@@ -2437,7 +2437,7 @@ select:focus {
 }
 
 .slider-fade1.owl-theme .owl-nav .owl-prev:before {
-    content: "\2190";
+    content: '\2190';
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -4042,7 +4042,7 @@ select:focus {
 }
 
 .service-slider.owl-theme .owl-nav .owl-prev:before {
-    content: '';
+    content: '\2192';
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -5615,7 +5615,7 @@ select:focus {
 }
 
 .portfolio-carousel-02.owl-theme .owl-nav .owl-prev:before {
-    content: '';
+    content: '\2192';
     display: inline-block;
     width: 6px;
     height: 6px;
