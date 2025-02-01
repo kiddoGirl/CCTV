@@ -8041,7 +8041,7 @@ a#cancel-comment-reply-link:focus {
     left: 0;
     right: 0;
     margin-left: 20px;
-    content: "\e64a";
+    content: "\2194";
     font-family: 'themify';
     font-size: 21px;
     line-height: 70px;
@@ -8096,7 +8096,7 @@ a#cancel-comment-reply-link:focus {
     left: 0;
     right: 0;
     margin-right: 20px;
-    content: "\e64a";
+    content: '\2190';
     font-family: 'themify';
     font-size: 21px;
     line-height: 70px;

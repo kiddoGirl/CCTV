@@ -201,11 +201,11 @@
             responsive: {
                 0: {
                     items: 1,
-                    nav: !1
+                    
                 },
                 600: {
                     items: 1,
-                    nav: !1
+                   
                 },
                 768: {
                     items: 1
@@ -226,11 +226,11 @@
             responsive: {
                 0: {
                     items: 1,
-                    nav: !1
+                    
                 },
                 600: {
                     items: 1,
-                    nav: !1
+                    
                 },
                 1e3: {
                     items: 1

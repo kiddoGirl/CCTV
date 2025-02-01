@@ -1,34 +1,46 @@
-<?php 
-$errors = '';
-$myemail = 'EMAIL@gmail.com';
-if(empty($_POST['name'])  ||
-   empty($_POST['email']) ||
-   empty($_POST['message'])) ||
-   empty($_POST['address']))
-{
-    $errors .= "\n Error: all fields are required";
-}
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$message = $_POST['message'];
-$address = $_POST['address'];
-if (!preg_match(
-"/ ^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-$email_address))
-{
-    $errors .= "\n Error: Invalid email address";
-}
-if( empty($errors))
-{
-    $to = '$myemail';
-    $email_subject = "Contact form submission: $name";
-    $email_body = "You have received a new message. ".
-        " Here are the details:\n Name: $name \n ".
-        "Email: $email_address\n Message \n $message" \n Address $address;
-    $headers = "From: $myemail\n";
-    $headers .= "Reply-To: $email_address";
-    mail($to,$email_subject,$email_body,$headers);
-    //redirect to the 'thank you' page
-    header('Location: contact-form-thank-you.html');
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form data
+    $name = htmlspecialchars($_POST['name']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $email = htmlspecialchars($_POST['email']);
+    $address = htmlspecialchars($_POST['address']);
+
+    // Recipient email address
+    $to = "your-email@example.com"; // Change this to the email address where you want to receive form submissions
+
+    // Email subject
+    $subject = "New Form Submission";
+
+    // Email content
+    $message = "
+    <html>
+    <head>
+        <title>Form Submission</title>
+    </head>
+    <body>
+        <h2>New Form Submission</h2>
+        <p><strong>Name:</strong> $name</p>
+        <p><strong>Phone Number:</strong> $phone</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Address:</strong> $address</p>
+    </body>
+    </html>
+    ";
+
+    // Set content-type header for HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
+
+    // Additional headers
+    $headers .= "From: no-reply@yourdomain.com" . "\r\n"; // Customize this header
+    $headers .= "Reply-To: $email" . "\r\n"; // Reply-To address
+
+    // Send email
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Form submitted successfully.";
+    } else {
+        echo "There was an issue with your submission. Please try again.";
+    }
 }
 ?>
