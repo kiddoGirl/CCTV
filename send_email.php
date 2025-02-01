@@ -6,13 +6,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $address = htmlspecialchars($_POST['address']);
 
-    // Recipient email address
-    $to = "your-email@example.com"; // Change this to the email address where you want to receive form submissions
+ 
+    $to = "your-email@example.com"; 
 
-    // Email subject
+
     $subject = "New Form Submission";
 
-    // Email content
+
     $message = "
     <html>
     <head>
@@ -28,15 +28,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </html>
     ";
 
-    // Set content-type header for HTML email
+
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
 
-    // Additional headers
-    $headers .= "From: no-reply@yourdomain.com" . "\r\n"; // Customize this header
-    $headers .= "Reply-To: $email" . "\r\n"; // Reply-To address
 
-    // Send email
+    $headers .= "From: no-reply@yourdomain.com" . "\r\n"; 
+    $headers .= "Reply-To: $email" . "\r\n"; 
+
+
     if (mail($to, $subject, $message, $headers)) {
         echo "Form submitted successfully.";
     } else {
