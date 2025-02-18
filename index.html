@@ -141,6 +141,15 @@
 
     <style type='text/css'>
 
+        #redux_scroll_logo.scrolled {
+            display: block !important;
+            opacity: 1 !important;
+        }
+
+        .navbar.scrolled img {
+            display: block !important;
+        }
+
         .scroll-container {
             overflow: hidden;
             position: relative;
@@ -796,8 +805,8 @@
                                         <div class="navbar-header navbar-header-custom">
                                             <!-- start logo -->
                                     
-                                            <a href="index.html" class="navbar-brand hide-scroll">
-                                                <img id="redux_scroll_logo" src="monitywp.websitelayout.net/wp-content/uploads/2022/01/pixelcctv-logo.png" alt="Logo">
+                                            <a href="index.html" class="navbar-brand">
+                                                <img id="redux_scroll_logo" src="monitywp.websitelayout.net/wp-content/uploads/2022/01/pixelcctv-logo.png" alt="Logo" >
                                             </a>
                                             <!-- end logo -->
                                         </div>
@@ -848,7 +857,7 @@
                                         <div id="popupOverlay" class="overlay-container">
                                             <div class="popup-box">
                                                 <h2 style="color: #2a334e"> Form</h2>
-                                                <form class="form-container" action="send_email.php" method="POST">
+                                                <form class="form-container" action="#" method="POST">
 
                                                     <input type="hidden" name="form_id" value="popup_form">
 
@@ -2104,7 +2113,18 @@
     <script type="text/javascript" src="monitywp.websitelayout.net/wp-content/themes/monity/js/main.js?ver=6.6.2" id="monity-main-js"></script>
     <script type="text/javascript" src="monitywp.websitelayout.net/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.3.3" id="sourcebuster-js-js"></script>
 
+<script>
+    window.addEventListener("scroll", function () {
+    let navbar = document.querySelector(".navbar"); // Change selector as needed
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
 
+
+</script>
 
     <script type="text/javascript" id="wc-order-attribution-js-extra">
         /* <![CDATA[ */

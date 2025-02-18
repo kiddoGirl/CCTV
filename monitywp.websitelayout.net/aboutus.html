@@ -35,6 +35,16 @@
 
 	<style type='text/css'>
 
+		.menu_area-light a {
+			color: #2a334e !important;
+		}
+
+		.menu_area-light .navbar a:hover,
+		.menu_area-light .navbar a:focus,
+		.menu_area-light .navbar a:active {
+			color: #fcaf17 !important; 
+		}
+
 		.scroll-container {
 			overflow: hidden;
 			position: relative;
@@ -266,12 +276,12 @@
         <div class="content">
 
 			 <!-- start header section -->
-			 <header class="header-style1 menu_area-light">
+			 <header class="header-style1 menu_area-light" style="background-color: white;">
 
                 <div class="navbar-default border-bottom border-color-light-white">
 
                     <!-- start top search -->
-                    <div class="top-search bg-secondary">
+                    <!-- <div class="top-search bg-secondary">
                         <div class="container">
                             <div class="search-form">
 
@@ -286,7 +296,7 @@
                                 <span class="input-group-addon close-search mt-1"><i class="fas fa-times"></i></span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- end top search -->
 
                     <div class="container">
@@ -300,7 +310,7 @@
                                         <div class="navbar-header navbar-header-custom">
                                             <!-- start logo -->
                                         
-                                            <a href="../index.html" class="navbar-brand hide-scroll">
+                                            <a href="../index.html" class="navbar-brand">
                                                 <img id="redux_scroll_logo" src="./wp-content/uploads/2022/01/pixelcctv-logo.png" alt="Logo">
                                             </a>
                                             <!-- end logo -->
@@ -309,19 +319,17 @@
                                         <div class="navbar-toggler bg-secondary"></div>
 
                                         <ul id="nav" class="navbar-nav align-items-lg-center ms-auto navbar-nav align-items-lg-center ms-auto">
-                                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown  menu-item-14 nav-item"><a title="Home" href="../index.html" >Home</a>
+                                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown active menu-item-14 nav-item"><a title="Home" href="../index.html" class="nav-link">Home</a>
                                             </li>
-											<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown current-menu-ancestor current-menu-parent active menu-item-2725 nav-item">
-												<a title="Pages" href="aboutus.html" class="nav-link">About Us</a>
-											</li>
+                                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-2725 nav-item"><a title="Pages" href="aboutus.html" class="nav-link">About Us</a>
                                             </li>
-                                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5549" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-5549 nav-item"><a title="Services" href="#"  class="nav-link">Services</a>
+                                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5549" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-5549 nav-item current-menu-ancestor current-menu-parent"><a title="Services" href="#"  class="nav-link">Services</a>
                                                 <ul class="dropdown-menu" role="menu">
                                                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-6998" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-6998 nav-item"><a title="Finger Print Access" href="cctv-installation.html" class="dropdown-item">CCTV Installation</a></li>
                                                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-6999" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-6999 nav-item"><a title="CCTV Installation" href="home-automation.html" class="dropdown-item">Home Automation</a></li>
                                                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7000" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-7000 nav-item"><a title="Circuit Cameras" href="gate-automation.html" class="dropdown-item">Gate Automation</a></li>
                                                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7001" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-7001 nav-item"><a title="Wifi Camera Security" href="intercom-system.html" class="dropdown-item">Intercom</a></li>
-                                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7002" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-7002 nav-item"><a title="Video Analytics" href="burgler-alert.html" class="dropdown-item">Burgler Alarm / Safety Alarm</a></li>
+                                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7002" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-7002 nav-item"><a title="Video Analytics" href="burgler-alert.html" class="dropdown-item">Burgler Alarm / Safety Systems</a></li>
                                                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7003" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-7003 nav-item"><a title="Home Automation" href="video-door-phones.html" class="dropdown-item">Video Door Phones</a></li>
                                                 </ul>
                                             </li>
@@ -339,19 +347,19 @@
                                             </li>
                                             <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1606 nav-item"><a title="Blog" href="blog.html" class="nav-link">Blog</a>
                                             </li>
-                                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-6024" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6024 nav-item"><a title="Contact" href="contactus.html" class="nav-link">Contact</a></li>
+                                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-6024" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6024 nav-item"><a title="Contact" href="https://monitywp.websitelayout.net/?page_id=5373" class="nav-link">Contact</a></li>
                                         </ul>
                                         <!-- start attribute navigation -->
                                         <div class="attr-nav align-items-xl-center ms-xl-auto main-font">
                                             <ul>
                                                
-                                               
+                                                <!-- <li class="search"><a href="#!"><i class="fas fa-search"></i></a></li> -->
                                                 <li class="d-none d-xl-inline-block"><a class="butn-style04 medium" onclick="togglePopup()"><span>Free Quote</span></a></li>
                                             </ul>
                                         </div>
                                         <!-- end attribute navigation -->
 
-										<div id="popupOverlay" class="overlay-container">
+                                        <div id="popupOverlay" class="overlay-container">
                                             <div class="popup-box">
                                                 <h2 style="color: #2a334e"> Form</h2>
                                                 <form class="form-container">
@@ -962,7 +970,7 @@
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1e40e9e" data-id="1e40e9e" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<section class="elementor-section elementor-inner-section elementor-element elementor-element-1357eee elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1357eee" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
+						<div style="margin-top: 30px;" class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-2abb364" data-id="2abb364" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-9e79bb4 footer-logo mb-0 elementor-widget elementor-widget-image" data-id="9e79bb4" data-element_type="widget" data-widget_type="image.default">

@@ -1,23 +1,19 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
     $name = htmlspecialchars($_POST['name']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['number']); 
+    $email = htmlspecialchars($_POST['email']); // User's email
     $address = htmlspecialchars($_POST['address']);
 
- 
-    $to = "your-email@example.com"; 
-
-
+    $to = "manjubashini2110@gmail.com"; // Replace with your receiving email
     $subject = "New Form Submission";
-
 
     $message = "
     <html>
-    <head>
-        <title>Form Submission</title>
-    </head>
+    <head><title>Form Submission</title></head>
     <body>
         <h2>New Form Submission</h2>
         <p><strong>Name:</strong> $name</p>
@@ -28,19 +24,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </html>
     ";
 
-
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-
-
-    $headers .= "From: no-reply@yourdomain.com" . "\r\n"; 
+    $headers .= "From: $email" . "\r\n"; // Now using user-provided email
     $headers .= "Reply-To: $email" . "\r\n"; 
 
-
     if (mail($to, $subject, $message, $headers)) {
-        echo "Form submitted successfully.";
+        echo "<script>alert('Form submitted successfully!'); window.location.href='index.php';</script>";
     } else {
-        echo "There was an issue with your submission. Please try again.";
+        echo "<script>alert('Submission failed. Please try again.'); window.location.href='index.php';</script>";
     }
 }
 ?>
