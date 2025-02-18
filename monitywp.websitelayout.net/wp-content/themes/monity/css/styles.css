@@ -107,7 +107,7 @@ h6 a,
 .h4 a,
 .h5 a,
 .h6 a {
-    color: #2a334e
+    color: #2a334e;
 }
 
 a:hover,
@@ -955,39 +955,39 @@ select:focus {
 }
 
 .butn-style05.white:hover {
-    color: #2a334e !important
+    color: #2a334e !important;
 }
 
 .butn-style05.white:before {
-    background-color: #fff
+    background-color: #fff;
 }
 
 .butn-style05.secondary {
     color: #fff !important;
-    border: 1px solid #fcaf17
+    border: 1px solid #fcaf17;
 }
 
 .butn-style05.secondary:hover,
 .butn-style05.secondary:active,
 .butn-style05.secondary:focus {
     border: 1px solid #fcaf17;
-    border: 1px solid #fcaf17
+    border: 1px solid #fcaf17;
 }
 
 .butn-style05.secondary:before {
-    background-color: #fcaf17
+    background-color: #fcaf17;
 }
 
 @media screen and (min-width: 992px) {
     .menu_area-light.scrollHeader .butn-style05 {
         border: 1px solid #2a334e;
-        color: #2a334e !important
+        color: #ffffff !important;
     }
     .menu_area-light.scrollHeader .butn-style05:hover,
     .menu_area-light.scrollHeader .butn-style05:focus,
     .menu_area-light.scrollHeader .butn-style05:active {
-        color: #212529;
-        background: #212529
+        color: #ffffff;
+        background: #212529;
     }
 }
 
@@ -1004,7 +1004,7 @@ select:focus {
     padding-bottom: 15px;
     margin-bottom: 15px;
     text-align: left;
-    color: #575a7b
+    color: #575a7b;
 }
 
 .list-style1 li:last-child {
@@ -1015,7 +1015,7 @@ select:focus {
 
 .list-style1.white li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    color: #fff
+    color: #212529;
 }
 
 .list-style1.white li:last-child {
@@ -1026,7 +1026,7 @@ select:focus {
 
 .bg-dark .list-style1 li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    color: #fff
+    color: #212529;
 }
 
 .bg-dark .list-style1 li:last-child {
@@ -1707,75 +1707,75 @@ select:focus {
 }
 
 .attr-nav>ul>li>a.butn {
-    color: #fff
+    color: #2a334e !important;
 }
 
 .navbar>ul>li.current>a:after,
 .navbar>ul>li.current-menu-item>a:after,
 .navbar>ul>li.current-menu-ancestor>a:after {
-    border-color: transparent #fcaf17 #fcaf17 transparent
+    border-color: transparent #fcaf17 #fcaf17 transparent;
 }
 
 .menu_area-light .navbar>ul>li.current>a:after {
-    border-color: transparent #fcaf17 #fcaf17 transparent
+    border-color: transparent #fcaf17 #fcaf17 transparent;
 }
 
 .menu_area-light .navbar>ul>li.current-menu-ancestor>a:after,
 .menu_area-light .navbar>ul>li.current-menu-ancestor.current-menu-item>a:after {
-    border-color: transparent #fcaf17 #fcaf17 transparent
+    border-color: transparent #fcaf17 #fcaf17 transparent;
 }
 
 .menu_area-light .navbar>ul>li.current-menu-item>a:after {
-    border-color: transparent #fcaf17 #fcaf17 transparent
+    border-color: transparent #fcaf17 #fcaf17 transparent;
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.current>a {
-    color: #fcaf17
+    color: #fcaf17;
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.current-menu-ancestor>a,
 .menu_area-light.scrollHeader .navbar-nav li.current-menu-ancestor.current-menu-item>a {
-    color: #fcaf17
+    color: #fcaf17;
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.current-menu-item>a,
 .menu_area-light.scrollHeader .navbar-nav li.current>a:hover {
-    color: #fcaf17
+    color: #fcaf17;
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.current-menu-ancestor>a:hover,
 .menu_area-light.scrollHeader .navbar-nav li.current-menu-ancestor.current-menu-item>a:hover {
-    color: #fcaf17
+    color: #fcaf17;
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.current-menu-item>a:hover {
-    color: #fcaf17
+    color: #fcaf17;
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.current-menu-ancestor>a,
 .menu_area-light.scrollHeader .navbar-nav li.current-menu-ancestor.current-menu-item>a {
-    color: #fcaf17
+    color: #fcaf17;
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.current-menu-item>a {
-    color: #fcaf17
+    color: #fcaf17;
 }
 
 .menu_area-light.scrollHeader .navbar>ul>li.current>a:after {
-    border-color: transparent #fcaf17 #fcaf17 transparent
+    border-color: transparent #fcaf17 #fcaf17 transparent;
 }
 
 .menu_area-light.scrollHeader .navbar>ul>li.current-menu-ancestor>a:after,
 .menu_area-light.scrollHeader .navbar>ul>li.current-menu-ancestor.current-menu-item>a:after {
-    border-color: transparent #fcaf17 #fcaf17 transparent
+    border-color: transparent #fcaf17 #fcaf17 transparent;
 }
 
 .menu_area-light.scrollHeader .navbar>ul>li.current-menu-item>a:after {
-    border-color: transparent #fcaf17 #fcaf17 transparent
+    border-color: transparent #fcaf17 #fcaf17 transparent;
 }
 
 .navbar ul ul>li.has-sub:hover>a:before {
-    top: 15px
+    top: 15px;
 }
 
 .navbar ul ul li.has-sub>a:before {
@@ -1783,7 +1783,7 @@ select:focus {
     right: 26px;
     width: 2px;
     height: 10px;
-    background: #fcaf17
+    background: #fcaf17;
 }
 
 .navbar ul ul li.has-sub>a:after {
@@ -1791,15 +1791,25 @@ select:focus {
     right: 22px;
     width: 10px;
     height: 2px;
-    background: #fcaf17
+    background: #fcaf17;
 }
 
 .header-style3 .navbar-nav li.current>a {
-    color: #fcaf17
+    color: #fcaf17;
 }
 
 .header-style3 .navbar-nav li.active>a {
-    color: #fcaf17
+    color: #fcaf17;
+}
+
+.menu_area-light a {
+    color: #2a334e !important;
+}
+
+.menu_area-light .navbar a:hover,
+.menu_area-light .navbar a:focus,
+.menu_area-light .navbar a:active {
+    color: #fcaf17 !important; 
 }
 
 @media screen and (max-width: 991px) {
@@ -1808,22 +1818,26 @@ select:focus {
     }
     .header-style1 .navbar-toggler:after {
         border-top: 2px solid #fff;
-        border-bottom: 2px solid #fff
+        border-bottom: 2px solid #fff;
     }
     .header-style1 .navbar-toggler:before {
-        background: #fff
+        background: #fff;
     }
     .header-style1 .navbar-toggler.menu-opened:after,
     .header-style1 .navbar-toggler.menu-opened:before {
-        background: #fff
+        background: #fff;
     }
+}
+
+.navbar-nav li.current>a {
+    color: #2a334e !important;
 }
 
 .header-style2 .navbar-nav li.current>a,
 .header-style2 .navbar-nav li.current-menu-ancestor>a,
 .header-style2 .navbar-nav li.current-menu-item>a,
 .header-style2 .navbar-nav li.current-menu-parent>a {
-    color: #fcaf17
+    color: #fcaf17;
 }
 
 .header-style2 .navbar>ul>li.current>a:after,
@@ -2039,13 +2053,13 @@ select:focus {
     .menu_area-light .navbar-nav li.current>a,
     .menu_area-light .navbar-nav li.active>a {
         color: #fcaf17;
-        background: none
+        background: none;
     }
     .navbar-nav li a:active,
     .navbar-nav li a:focus,
     .navbar-nav li a:hover {
         background: none;
-        color: #575a7b
+        color: #575a7b;
     }
 }
 
@@ -5164,6 +5178,11 @@ select:focus {
 
 .testimonial-style1.owl-carousel .owl-nav button.owl-next {
     right: 0
+}
+
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+    color: #2a334e !important;
 }
 
 .testimonial-carousel1 .inner-text {
